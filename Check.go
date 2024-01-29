@@ -12,7 +12,7 @@ type MullvadResponse struct {
 }
 
 func main() {
-	resp, err := http.Get("https://am.i.mullvad.netjson")
+	resp, err := http.Get("https://am.i.mullvad.net/json")
 	if err != nil {
 		fmt.Println("Error making request to Mullvad API:", err)
 		return
