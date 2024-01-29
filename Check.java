@@ -15,7 +15,7 @@ public class MullvadCheck {
     ConfigurationContext configContext = ConfigurationContextFactory.createConfigurationContextFromFileSystem(null, new File(".").getAbsolutePath());
     ServiceClient client = new ServiceClient(configContext, null);
     Options options = client.getOptions();
-    EndpointReference targetEPR = new EndpointReference("https://am.i.mullvad.netjson");
+    EndpointReference targetEPR = new EndpointReference("https://am.i.mullvad.net/json");
     options.setTo(targetEPR);
     options.setAction("http://schemas.mullvad.net/CheckConnection");
     options.setProperty(Options.MESSAGE_TYPE, "application/json");
