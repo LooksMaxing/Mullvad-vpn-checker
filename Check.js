@@ -1,7 +1,7 @@
 const axios = require('axios');
 const fs = require('fs');
 
-axios.get('https://am.i.mullvad.netjson')
+axios.get('https://am.i.mullvad.net/json')
   .then(response => {
     const data = response.data;
     const mullvadExitIp = data.mullvad_exit_ip;
